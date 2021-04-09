@@ -24,3 +24,21 @@ The goal is to be able to use the inverted index within Azure Cognitive Search t
 
 ![Define Fake Terms](https://github.com/liamca/vector-search/raw/main/imgs/define-fake-terms.png)
 
+### Upload Text Embeddings to Cognitive Search
+
+Load the saved Cluster Centers
+New embedding to be indexed: [-0.15, 0.22 ,… 0.41]
+
+Choose Fake Term based on cluster closest embedding: [A1, B3, …, FED0]
+
+Convert to string and index: “A1 B3 … FED0”
+
+### Query Text Embeddings
+
+Load the saved Cluster Centers
+New embedding to be searched: [-0.15, 0.22 ,… 0.41]
+
+Choose Fake Term based on cluster closest embedding: [A1, B3, …, FED0]
+
+Convert to string and search: “A1 B3 … FED0”
+
