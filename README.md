@@ -9,3 +9,7 @@ This technique has shown to be incredibly effective and easy to implement.  Many
 ## Getting Started
 The following samples have been created to help you get started:
 - [Image Search](https://github.com/liamca/vector-search/tree/main/notebooks/image-search)
+
+## How it Works
+
+The goal is to be able to use the inverted index within Azure Cognitive Search to be able to quickly find vectors stored in the search index that are similar to a vector provided as part of a search query.  Unlike techniques like cosine similarity which are slow to process large numbers of items, this leverages an inverted index which enables much more data to be indexed and searched.  
