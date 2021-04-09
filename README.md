@@ -13,3 +13,14 @@ The following samples have been created to help you get started:
 ## How it Works
 
 The goal is to be able to use the inverted index within Azure Cognitive Search to be able to quickly find vectors stored in the search index that are similar to a vector provided as part of a search query.  Unlike techniques like cosine similarity which are slow to process large numbers of items, this leverages an inverted index which enables much more data to be indexed and searched.  
+
+![Vector Search Index in Azure Cognitive Search](https://github.com/liamca/vector-search/raw/main/imgs/azure-cognitive-search-index.png)
+
+![Pivot Test Embeddings](https://github.com/liamca/vector-search/raw/main/imgs/pivot-embeddings.png)
+
+![CLuster Dimensions](https://github.com/liamca/vector-search/raw/main/imgs/find-cluster-centers.png)
+
+![Find Optimal Cluster Centers](https://github.com/liamca/vector-search/raw/main/imgs/find-optimal-center-clusters.png)
+
+![Define Fake Terms](https://github.com/liamca/vector-search/raw/main/imgs/define-fake-terms.png)
+
