@@ -6,7 +6,21 @@ The goal of this is to enable search over Text, Images, Videos and Audio using A
 
 This technique has shown to be incredibly effective and easy to implement.  Many pretrained models create vast numbers of dimensions and performance tends to degrade as the number of dimensions increase.  
 
-## Getting Started
+## Configuring Python Environment
+The samples below leverage [sentence transformers](https://github.com/UKPLab/sentence-transformers), however, it should be fairly straightforward to convert to other pretrained models as needed.  This has been tested on Ubuntu and Windows and the requirements.txt includes the package versions used.  These were the conda commands used to install the required packages:
+
+```
+conda create -n py37-vector-search python=3.7
+conda activate py37-vector-search
+conda install -c conda-forge jupyterlab
+conda install pytorch torchvision torchaudio cpuonly -c pytorchconda install pytorch torchvision torchaudio cpuonly -c pytorch
+conda install -c anaconda gensim
+conda install smart_open==2.0.0
+pip install azure-search-documents
+pip install -U sentence-transformers
+```
+
+## Samples
 The following samples have been created to help you get started:
 - [Image Search](https://github.com/liamca/vector-search/tree/main/notebooks/image-search)
 
