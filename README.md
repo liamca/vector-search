@@ -43,29 +43,7 @@ The object is converted into a set of fake terms which are then indexes into Cog
 
 ![Vector Search Index in Azure Cognitive Search](https://github.com/liamca/vector-search/raw/main/imgs/azure-cognitive-search-index.png)
 
-![Pivot Test Embeddings](https://github.com/liamca/vector-search/raw/main/imgs/pivot-embeddings.png)
-
-![CLuster Dimensions](https://github.com/liamca/vector-search/raw/main/imgs/find-cluster-centers.png)
-
-![Find Optimal Cluster Centers](https://github.com/liamca/vector-search/raw/main/imgs/find-optimal-center-clusters.png)
-
-![Define Fake Terms](https://github.com/liamca/vector-search/raw/main/imgs/define-fake-terms.png)
-
-### Upload Text Embeddings to Cognitive Search
-
-Load the saved Cluster Centers
-New embedding to be indexed: [-0.15, 0.22 ,… 0.41]
-
-Choose Fake Term based on cluster closest embedding: [A1, B3, …, FED0]
-
-Convert to string and index: “A1 B3 … FED0”
-
 ### Query Text Embeddings
 
-Load the saved Cluster Centers
-New embedding to be searched: [-0.15, 0.22 ,… 0.41]
-
-Choose Fake Term based on cluster closest embedding: [A1, B3, …, FED0]
-
-Convert to string and search: “A1 B3 … FED0”
+When you send a search query the objects embedding is converted into a set of fake terms which are used to find the most similar object.  For example, if an embedding looked like [-0,21, .123, ..., .876], this might be converted to a set of fake terms such as : “A1 B3 … FED0”.  This is what is sent as the search query.
 
