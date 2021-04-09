@@ -28,8 +28,8 @@ pip install -U sentence-transformers
 
 ## Samples
 The following samples have been created to help you get started:
-- [Image Search](https://github.com/liamca/vector-search/tree/main/notebooks/image-search)
 - [Text Search with Question and Answer](https://github.com/liamca/vector-search/blob/main/notebooks/text-search-question-answer)
+- [Image Search](https://github.com/liamca/vector-search/tree/main/notebooks/image-search)
 
 ## How it Works
 
