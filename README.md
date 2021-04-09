@@ -2,11 +2,31 @@
 
 PLEASE NOTE: This is an experimental capability.  It should not be used for production purposes at this time.
 
-The goal of this is to enable search over Text, Images, Videos and Audio using Azure Cognitive Search.  The technique was inspired by the following [research article](http://nmis.isti.cnr.it/falchi/Draft/2016-DaWaK-DRAFT.pdf), which converts vectors (embeddings) to text which allows the Cognitive Search service to leverage the inverted index to quickly find the most relevant items.  For this reason, any model that will convert an object to a vector can be leveraged as long as the number of dimensions in the resulting vector is less than 3000.  It also allows users to leverage existing pretrained or fine-tuned models.
+The goal of this is to enable search over Text, Images, Videos and Audio using [Azure Cognitive Search](https://azure.microsoft.com/en-us/services/search/).  The technique was inspired by the following [research article](http://nmis.isti.cnr.it/falchi/Draft/2016-DaWaK-DRAFT.pdf), which converts vectors (embeddings) to text which allows the Cognitive Search service to leverage the inverted index to quickly find the most relevant items.  For this reason, any model that will convert an object to a vector can be leveraged as long as the number of dimensions in the resulting vector is less than 3000.  It also allows users to leverage existing pretrained or fine-tuned models.
 
 This technique has shown to be incredibly effective and easy to implement.  Many pretrained models create vast numbers of dimensions and performance tends to degrade as the number of dimensions increase.  
 
-## Getting Started
+## Configuring Python Environment
+The samples below leverage [sentence transformers](https://github.com/UKPLab/sentence-transformers), however, it should be fairly straightforward to convert to other pretrained models or the vast number of existing [sentence transformer models](https://www.sbert.net/docs/pretrained_models.html) as needed.  This has been tested on Ubuntu and Windows and the requirements.txt includes the package versions used.  
+
+```
+conda create --name py37-vector-search --file requirements.txt
+```
+
+Alternatively, these were the conda commands used to install the required packages:
+
+```
+conda create -n py37-vector-search python=3.7
+conda activate py37-vector-search
+conda install -c conda-forge jupyterlab
+conda install pytorch torchvision torchaudio cpuonly -c pytorchconda install pytorch torchvision torchaudio cpuonly -c pytorch
+conda install -c anaconda gensim
+conda install smart_open==2.0.0
+pip install azure-search-documents
+pip install -U sentence-transformers
+```
+
+## Samples
 The following samples have been created to help you get started:
 - [Image Search](https://github.com/liamca/vector-search/tree/main/notebooks/image-search)
 
