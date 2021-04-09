@@ -35,6 +35,12 @@ The following samples have been created to help you get started:
 
 The goal is to be able to use the inverted index within Azure Cognitive Search to be able to quickly find vectors stored in the search index that are similar to a vector provided as part of a search query.  Unlike techniques like cosine similarity which are slow to process large numbers of items, this leverages an inverted index which enables much more data to be indexed and searched.  
 
+Using embeddings you can perform search of objects such as to find similar images as seen below:
+
+![Image Search](https://github.com/liamca/vector-search/raw/main/notebooks/image-search/demo.png)
+
+The object is converted into a set of fake terms which are then indexes into Cognitive Search.
+
 ![Vector Search Index in Azure Cognitive Search](https://github.com/liamca/vector-search/raw/main/imgs/azure-cognitive-search-index.png)
 
 ![Pivot Test Embeddings](https://github.com/liamca/vector-search/raw/main/imgs/pivot-embeddings.png)
