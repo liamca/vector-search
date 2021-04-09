@@ -7,7 +7,7 @@ The goal of this is to enable search over Text, Images, Videos and Audio using [
 This technique has shown to be incredibly effective and easy to implement.  Many pretrained models create vast numbers of dimensions and performance tends to degrade as the number of dimensions increase.  
 
 ## Configuring Python Environment
-The samples below leverage [sentence transformers](https://github.com/UKPLab/sentence-transformers), however, it should be fairly straightforward to convert to other pretrained models as needed.  This has been tested on Ubuntu and Windows and the requirements.txt includes the package versions used.  
+The samples below leverage [sentence transformers](https://github.com/UKPLab/sentence-transformers), however, it should be fairly straightforward to convert to other pretrained models or the vast number of existing [sentence transformer models](https://www.sbert.net/docs/pretrained_models.html) as needed.  This has been tested on Ubuntu and Windows and the requirements.txt includes the package versions used.  
 
 ```
 conda create --name py37-vector-search --file requirements.txt
