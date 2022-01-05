@@ -17,7 +17,7 @@ The following example comes from the vec2Text-msmarco-test.ipynb notebook which 
 
 ## Usage
 
-Before getting started, you will need to ensure you have created an Azure Cognitive Search index and have updated the file [azureCognitiveSearch.py](https://github.com/liamca/vector-search/blob/main/notebooks/image-search/azureCognitiveSearch.py) with your search service name and API key:
+Before getting started, you will need to ensure you have created an Azure Cognitive Search index and have updated the file [azureCognitiveSearch.py](https://github.com/liamca/vector-search/blob/main/notebooks/text-search-question-answer/azureCognitiveSearch.py) with your search service name and API key:
 
 * serviceName = ["Enter Search Service name -- DO NOT include .search.windows.net"]
 * adminKey = ["Search Service Admin API Key"]
