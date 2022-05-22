@@ -19,7 +19,7 @@ Alternatively, these were the conda commands used to install the required packag
 conda create -n py37-vector-search python=3.7
 conda activate py37-vector-search
 conda install -c conda-forge jupyterlab
-conda install pytorch torchvision torchaudio cpuonly -c pytorchconda install pytorch torchvision torchaudio cpuonly -c pytorch
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
 conda install -c anaconda gensim
 conda install smart_open==2.0.0
 pip install azure-search-documents
